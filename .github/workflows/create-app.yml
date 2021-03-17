@@ -33,4 +33,4 @@ jobs:
     - name: installing surge
       run: npm install --global surge
     - name: deploying site on surge
-      run: surge ./build shoes-store-raza-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build shoes-store-ali-raza-app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
