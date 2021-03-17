@@ -191,28 +191,7 @@ const initialState = {
     },
   ],
   Select: null,
-  Cart: [
-    {
-      id: 12,
-      title: "Nike Shoes 12",
-      price: 55,
-      heading: "Nike Air Max Plus ",
-      colors: ["red", "green", "gray", "pink"],
-      count: "1",
-      desciption: `Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1500s, when an unknown printer took a galley of
-    type and scrambled it to make a type specimen book. It has
-    survived not only five centuries, but also the leap into
-    electronic typesetting, remaining essentially unchanged. It was
-    popularised in the 1960s with`,
-      src: [
-        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/46090a3c-91c1-4b30-9ab9-555dffce7826/air-max-90-shoe-W1jPJZ.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRaLr_A-HwW76rRrseLK54uHhutpP_PmaqbAA&usqp=CAU",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQs_W7E5RisQySJiQxGhWqlLxSFwU2f_xjvrA&usqp=CAU",
-      ],
-    },
-  ],
+  Cart: [],
 };
 
 export default (state = initialState, action) => {

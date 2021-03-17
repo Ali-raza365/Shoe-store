@@ -4,8 +4,8 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import { Button, TextField } from "@material-ui/core";
-import { useSelector, useDispatch } from "react-redux";
+import { TextField } from "@material-ui/core";
+import { useDispatch } from "react-redux";
 import ClearIcon from "@material-ui/icons/Clear";
 import { ChangeQuantity, Remove } from "../redux/action";
 
@@ -37,7 +37,7 @@ const useStyles = makeStyles({
   },
   qty: {
     marginLeft: 5,
-    width: 30,
+    width: 40,
     verticalAlign: " text-bottom",
     paddingLeft: 6,
   },
@@ -61,7 +61,7 @@ function CartProducts({ Cart, gettotal }) {
     gettotal();
   };
 
-  const { id, title, price, heading, desciption, src } = Cart;
+  const { id, price, heading, src } = Cart;
   return (
     <Card className={classes.root}>
       <span
@@ -99,7 +99,7 @@ function CartProducts({ Cart, gettotal }) {
             onChange={(evt) => {
               if (evt.target.value !== "0") {
                 setQty(evt.target.value);
-                dispatch(ChangeQuantity(id, evt.target.value));
+                dispatch(ChangeQuantity(id, Qty));
                 gettotal();
               }
             }}

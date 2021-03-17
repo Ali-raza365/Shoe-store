@@ -75,8 +75,8 @@ function Cart() {
           <CartProducts gettotal={gettotal} key={ind} Cart={item} />
         ))
       ) : (
-        <div>
-          <h1>Nothing in Cart</h1>
+        <div style={{ textAlign: "center" }}>
+          <h1>No Product Found In Cart</h1>
           <br />
           <Link to="/">
             <Button variant="contained" className={classes.btn}>
@@ -85,7 +85,7 @@ function Cart() {
           </Link>
         </div>
       )}
-      {items.length && (
+      {items.length ? (
         <Card className={classes.card}>
           <CardContent>
             <Typography className={classes.title} gutterBottom component="h1">
@@ -123,7 +123,7 @@ function Cart() {
             </Button>
           </div>
         </Card>
-      )}
+      ) : null}
     </Container>
   );
 }
