@@ -12,7 +12,7 @@ import { ChangeQuantity, Remove } from "../redux/action";
 const useStyles = makeStyles({
   root: {
     position: "relative",
-    width: "950px",
+    width: "62%",
     minHeight: "300px",
     display: "flex",
     justifyContent: "space-around",

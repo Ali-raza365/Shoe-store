@@ -23,9 +23,9 @@ const useStyles = makeStyles({
   },
   card: {
     minHeight: 300,
-    width: 400,
+    width: "34%",
     position: "fixed",
-    right: 100,
+    right: '2%',
     top: 80,
   },
   title: {
