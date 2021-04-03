@@ -61,7 +61,7 @@ function CartProducts({ Cart, gettotal }) {
     gettotal();
   };
 
-  const { id, price, heading, src } = Cart;
+  const { id, price, heading, src,count } = Cart;
   return (
     <Card className={classes.root}>
       <span
@@ -94,7 +94,7 @@ function CartProducts({ Cart, gettotal }) {
             className={classes.qty}
             id="filled-number"
             type="number"
-            defaultValue={1}
+            defaultValue={count}
             value={Qty}
             onChange={(evt) => {
               if (evt.target.value !== "0") {
